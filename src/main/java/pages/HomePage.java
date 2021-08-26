@@ -12,14 +12,9 @@ public class HomePage {
         this.driver = driver;
     }
 
-    public LoginPage clickLoginLink(){
-        clickLink("Form Authentication");
-        return new LoginPage(driver);
-    }
-
-    public DropdownPage clickDropdown(){
-        clickLink("Dropdown");
-        return new DropdownPage(driver);
+    public SignInPage clickSignin(){
+        clickLink("Sign in");
+        return new SignInPage(driver);
     }
 
     public void clickLink(String linkText){
